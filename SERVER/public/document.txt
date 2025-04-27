@@ -1,0 +1,15 @@
+Hier een lijst van favoriete films van de gebruiker.
+
+Mijn favoriete horror film is: Get Out
+Mijn favoriete romantische film is: Love and other drugs
+Mijn favoriete actie film is: John Wick
+Mijn favoriete drama film is: The Shawshank Redemption
+Mijn favoriete komedie film is: Crazy, Stupid, Love
+Mijn favoriete science fiction film is: Dune 2
+Mijn favoriete thriller film is: Se7en
+Mijn favoriete animatiefilm is: across the spider-verse
+Mijn favoriete documentaire film is: The social dilemma
+Mijn favoriete biografische film is: The big short
+Mijn favoriete marvel film is: Avengers: Endgame
+Mijn favoriete DC film is: the batman
+Mijn favoriete western film is: Django Unchained
