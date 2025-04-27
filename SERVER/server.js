@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import { AzureChatOpenAI } from "@langchain/openai";
-import { HumanMessage, SystemMessage } from "@langchain/core/messages";
+import { HumanMessage, SystemMessage, AIMessage } from "@langchain/core/messages";
 import { createVectorstore } from "./vectorestore.js";
 import { FaissStore } from "@langchain/community/vectorstores/faiss";
 import { AzureOpenAIEmbeddings } from "@langchain/openai";
@@ -10,6 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
 
 const model = new AzureChatOpenAI({
     temperature: 1,
@@ -20,6 +21,7 @@ const model = new AzureChatOpenAI({
 
 let vectorStore;
 
+//functie om de server te strarten
 async function startServer() {
     await createVectorstore();
     console.log("Vectordatabase gemaakt.");
@@ -54,6 +56,7 @@ app.post("/ask", async (req, res) => {
             .map(([role, content]) => {
                 if (role === "system") return new SystemMessage({ content });
                 if (role === "human") return new HumanMessage({ content });
+                if (role === "AI") return new AIMessage({ content });
                 return null;
             })
             .filter(Boolean);

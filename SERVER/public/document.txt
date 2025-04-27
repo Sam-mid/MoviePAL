@@ -1,4 +1,6 @@
 Hier een lijst van favoriete films van de gebruiker.
+Dit zijn films die de gebruiker al heeft gezien dus hoef je niet te vragen of ze ze al heeft gezien.
+en kan je deze films gebruiken voor het geven van een suggestie.
 
 Mijn favoriete horror film is: Get Out
 Mijn favoriete romantische film is: Love and other drugs
