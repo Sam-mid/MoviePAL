@@ -15,6 +15,15 @@ in de root van de repository staan de volgende mappen:
 
 - Node.js (v18 of hoger aanbevolen)
 - Een geldig `.env` bestand met je Azure OpenAI API-sleutel en configuratie
+- Je hebt NPM geinstalleerd in de server map.
+
+```bash
+cd server
+```
+
+```bash
+npm install
+```
 
 ---
 
